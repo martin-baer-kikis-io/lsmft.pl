@@ -69,4 +69,5 @@ sub list_mexican_food_trucks
     list_mexican_food_trucks($csv_name, $csv_fh, $site);
 
    close($csv_fh);
+   unlink($csv_name);
 }
