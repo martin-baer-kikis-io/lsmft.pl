@@ -25,7 +25,6 @@ sub usage() {
     }
 }
 
-
 sub list_mexican_food_trucks
 {
     my ( $csv_name, $csv_fh, $site ) = @_;
@@ -56,7 +55,6 @@ sub list_mexican_food_trucks
 
 #     main  entrypoint
 {
-
     usage;
 
     my $site       = "https://data.sfgov.org/api/views/rqzj-sfat/rows.csv";
@@ -69,5 +67,7 @@ sub list_mexican_food_trucks
     list_mexican_food_trucks($csv_name, $csv_fh, $site);
 
    close($csv_fh);
+
    unlink($csv_name);
+
 }
