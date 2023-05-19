@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-#    lsmft.pl
+#     lsmft.pl
 #
 #        Simple tool to help users play with their food. 
 #
